@@ -1,0 +1,57 @@
+.nav-black {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto 0 auto;
+    width: 980px;
+    height: 60px;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: black;
+    .logo-black {
+      width: 92px;
+      height: 42px;
+      margin-right: auto;
+      text-align: center;
+      // line-height: 42px;
+      // font-family: Gill;
+      // border: solid;
+      // border-width: 3px;
+      background-image: url(../images/logo-black.png);
+
+      font-size: 20px;
+      color: black;
+    }
+
+    .links-black {
+      width: 480px;
+      height: 42px;
+      align-self: center;
+      display: flex;
+      font-family: Gill;
+      font-size: 15px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        margin: auto;
+        border-right: solid;
+        border-width: 2px;
+        padding-right: 20px;
+        border-color: $site-blue;
+        text-align: center;
+        justify-content: space-around;
+      }
+      #con {
+        border-right: none;
+        border-color: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  nav {
+    max-width: 600px;
+  }
+}

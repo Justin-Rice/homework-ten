@@ -1,0 +1,96 @@
+.SO {
+  height: 900px;
+  width: 820px;
+  margin: 0 auto;
+  margin-top: 70px;
+  h1 {
+    font-family: Proxima;
+    width: 196px;
+    //  background-color: palegoldenrod;
+    font-weight: 300;
+
+    border-bottom: solid;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    border-width: 2px;
+  }
+
+  .offer {
+    height: 287px;
+    width: 980px;
+    //  background-color: orchid;
+    display: flex;
+    flex-direction: row;
+    margin-top: 55px;
+
+    .offer-image {
+      height: 287px;
+      width: 199px;
+      // background-color: palegreen;
+    }
+    .offer-image.Barcelona {
+      background-image: url(../images/special-offer-01.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .offer-image.Bangkok {
+      background-image: url(../images/special-offer-02.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .offer-info {
+      margin-left: 21px;
+      width: 390px;
+      height: 287px;
+      // background: lightseagreen;
+
+      h1 {
+        font-family: Proxima;
+        font-size: 30px;
+        //  background: lightsalmon;
+        span {
+          font-size: 20px;
+          color: #ff7d38;
+        }
+      }
+      p {
+        height: 131px;
+        width: 290px;
+        font-family: Gill;
+        font-size: 16px;
+
+        // background-color: wheat;
+        padding-left: 10px;
+      }
+      button {
+        margin-top: 50px;
+        height: 40px;
+        width: 150px;
+        outline: none;
+        font-size: 15px;
+        font-family: Gill;
+        color: $white;
+        background-color: $site-blue;
+        border-color: $site-blue;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}
+@media all and(max-width: 980px) {
+  .SO {
+    max-width: 500px;
+    h1 {
+      letter-spacing: 2px;
+    }
+    .offer {
+      .offer-info {
+        width: 250px;
+      }
+    }
+  }
+}

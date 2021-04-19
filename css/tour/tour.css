@@ -1,0 +1,5 @@
+.tour header {
+  max-width: 980px;
+  height: 200px;
+  background-image: url(images/tours-header.jpg);
+}

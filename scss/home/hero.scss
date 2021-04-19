@@ -1,0 +1,40 @@
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  //margin 0 auto only works if a width is set
+  margin: 0 auto;
+  background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  text-align: center;
+
+  h1 {
+    font-size: 60px;
+    color: $white;
+    line-height: 160px;
+    font-weight: 100;
+    padding-bottom: -20px;
+    font-family: Proxima;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-family: Gill;
+    color: $white;
+    font-weight: normal;
+  }
+
+  button {
+    height: 40.04px;
+    width: 121.6px;
+    font-family: Gill;
+    font-size: 15px;
+    color: $white;
+    background-color: $site-blue;
+    border: none;
+    outline: none;
+  }
+}

@@ -1,0 +1,150 @@
+.booking-form {
+  width: 819px;
+  margin: 79px auto;
+  height: 890px;
+
+  h1 {
+    font-size: 60px;
+    font-family: Proxima;
+  }
+  input {
+    border-style: solid;
+    border-color: $site-blue;
+    border-width: 3px;
+    border-radius: 5px;
+    font-family: Gill;
+    font-size: 18px;
+  }
+  input.check {
+    margin-bottom: 20px;
+    width: 735px;
+    height: 58px;
+  }
+  label {
+    line-height: 58px;
+    font-family: Gill;
+    font-size: 18px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      height: 58px;
+      width: 345px;
+      margin-right: 10px;
+      margin-left: 0px;
+      margin-bottom: 20px;
+    }
+
+    .email {
+      height: 58px;
+      width: 460px;
+      justify-content: center;
+    }
+  }
+  .flex2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .flex3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  select {
+    height: 58px;
+    width: 103px;
+    border-style: solid;
+    border-color: $site-blue;
+    border-width: 3px;
+    border-radius: 5px;
+    font-family: Gill;
+    font-size: 18px;
+
+    option {
+      font-family: Gill;
+      font-size: 18px;
+    }
+  }
+  .long {
+    width: 819px;
+    height: 192px;
+    text-align: left;
+    border-style: solid;
+    margin-top: 20px;
+  }
+  .long::placeholder {
+    position: relative;
+    top: -80px;
+  }
+  .submit {
+    margin-top: 40px;
+    width: 813px;
+    height: 60.59px;
+    margin-left: 2.5px;
+    border-radius: 30px;
+    background-color: $site-blue;
+    color: $white;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .booking-form {
+    max-width: 700px;
+    min-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    height: 1200px;
+    .flex {
+      justify-content: space-between;
+      .col {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .name {
+        margin: 20px auto;
+        width: auto;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .email {
+        margin: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .booking-form {
+    .flex2 {
+      display: flex;
+      flex-direction: column;
+    }
+    .check {
+      max-width: 700px;
+      min-width: auto;
+    }
+  }
+
+  .flex3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    min-width: auto;
+  }
+  .long {
+    max-width: 700px;
+    min-width: auto;
+  }
+  .submit {
+    max-width: 700px;
+    margin: auto;
+  }
+}

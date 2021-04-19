@@ -1,0 +1,149 @@
+.tour {
+  header {
+    @include center(981px);
+    margin-top: 70px;
+    height: 200px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../images/tours-header.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-family: Proxima;
+      text-transform: uppercase;
+      font-size: 60px;
+      color: white;
+      letter-spacing: 12px;
+    }
+  }
+  .tours {
+    @include center(818px);
+    margin-top: 48px;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .tourPromo {
+      width: 236px;
+      height: 304px;
+      background-color: orange;
+      text-align: center;
+      margin-bottom: 55px;
+      padding-top: 37px;
+
+      h1 {
+        font-size: 60px;
+        font-weight: 100;
+        font-family: Proxima;
+        color: $white;
+        text-overflow: "-";
+        text-align: center;
+      }
+      h4 {
+        font-size: 30px;
+        font-weight: 100;
+        font-family: Proxima;
+        color: $white;
+        text-overflow: "-";
+        margin-top: -20px;
+        margin-bottom: 40px;
+      }
+      a button {
+        height: 40px;
+        width: 150px;
+        outline: none;
+        font-size: 15px;
+        font-family: Gill;
+        color: $white;
+        background-color: $site-blue;
+        border-color: $site-blue;
+        border-radius: 50px;
+      }
+
+      button:active {
+        border-style: outset;
+      }
+    }
+  }
+  .tourPromo.Israel {
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .tourPromo.USA {
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .tourPromo.Australia {
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .tourPromo.New-Zeland {
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-04.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .tourPromo.France {
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-05.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .tourPromo.Egypt {
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-06.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .tourPromo.Japan {
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-07.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .tourPromo.Canada {
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-08.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .tourPromo.UAE {
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+      url(../images/tour-09.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media all and(max-width: 900px) {
+  .tour {
+    .tours {
+      flex-direction: column;
+      align-items: center;
+      .tourPromo {
+      }
+    }
+  }
+}

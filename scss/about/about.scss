@@ -1,0 +1,104 @@
+.about {
+  margin: 0 auto;
+  height: 715px;
+  max-width: 980px;
+  //background-color: brown;
+  padding-bottom: 880px;
+  padding-top: 98px;
+
+  .about-top-section {
+    padding-bottom: 95px;
+    h1 {
+      font-family: Proxima;
+      font-size: 60px;
+      border-bottom-style: solid;
+      border-bottom-color: black;
+      width: 140px;
+      letter-spacing: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: Gill;
+    }
+  }
+
+  .about-bottom-section {
+    h3 {
+      font-size: 40px;
+      font-family: Proxima;
+      border-bottom-style: solid;
+      border-bottom-color: black;
+      width: 255px;
+      letter-spacing: 10px;
+      white-space: nowrap;
+    }
+    .client {
+      max-width: 722px;
+      min-width: 150px;
+      display: flex;
+      padding-bottom: 37px;
+
+      p {
+        width: 300px;
+      }
+
+      .client-image {
+        height: 150px;
+        width: 260px;
+        background-color: bisque;
+      }
+      .client1 {
+        background-image: url(../images/about-client-01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .client2 {
+        background-image: url(../images/about-client-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .client-quote {
+        //background-color: blueviolet;
+        min-height: 50px;
+        width: 100%;
+        padding-left: 25px;
+        font-family: Gill;
+        font-style: italic;
+        font-size: 16px;
+      }
+
+      .client-name {
+        text-align: right;
+        font-family: Proxima;
+        font-size: 20px;
+        color: $site-blue;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 980px) {
+  .about {
+    width: 700px;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .client {
+    width: 500px;
+    margin-left: 30px;
+  }
+
+  .about-top-section {
+    width: 500px;
+    margin-left: 30px;
+  }
+
+  .about {
+    margin-left: 30px;
+  }
+}
